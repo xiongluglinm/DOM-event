@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.window{
+  /* border: 10px solid blue; */
+  width: 300px;
+  overflow: hidden;
+  margin: 50px auto;
+}
+.images{
+  display: flex;
+  align-items: flex-start; /* 知识点-- 1 */
+  transition: transform 0.5s;
+  transform: translateX(-300px);
+}
+.images img{
+  /* border: 1px solid black; */
+}
+
+.red{
+  color: red;
+}
+
+#buttonWrapper{
+	text-align: center;
+}

@@ -1,0 +1,72 @@
+.wrapper{
+    border: 1px solid red;
+    position: relative;
+    display: inline-block;
+  }
+  .popover{
+    border: 1px solid black;
+    position: absolute;
+    left: 100%;
+    white-space: nowrap;
+    top: 0;
+    margin-left: 20px;
+    padding: 10px;
+  }
+  .popover::before{
+    content: '';
+    border: 10px solid transparent;
+    border-right-color: black;
+    position: absolute;
+    right: 100%;
+    top: 0;
+  }
+  .popover::after{
+    content: '';
+    border: 10px solid transparent;
+    border-right-color: white;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    margin-left: 100px;  /* 问题1： 此句无任何效果？？？ */
+    margin-right: -1px;
+  }
+
+
+
+
+  /* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  div{
+    padding: 20px;
+    border: 1px solid black;
+    /* border-radius: 50%; */
+    transition: all 0.5s;
+    display: flex;
+    flex: 1;
+  }
+  .red{
+    width: 50vw;
+    height: 50vw;
+    margin: 100px auto;
+  }
+  .red.active{
+    background-color: red;
+  }
+  .blue.active{
+    background-color: blue;
+  }
+  .green.active{
+    background-color: green;
+  }
+  .yellow.active{
+    background-color: yellow;
+  }
+  .orange.active{
+    background-color: orange;
+  }
+  .purple.active{
+    background-color: purple;
+  } */
