@@ -2,19 +2,26 @@
 	margin: 0;
 	padding: 0;
 }
-.window{
-  /* border: 10px solid blue; */
-  width: 300px;
-  overflow: hidden;
+.container{
+  box-shadow: 0 0 3px #AAAAAA;
   margin: 50px auto;
+  width: 920px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
-.images{
+.window{
+  /* border: 1px solid black; */
+  /* width: 920px; */
+  overflow: hidden;
+  /* margin: 50px auto 0px; */
+}
+.window .images{
   display: flex;
   align-items: flex-start; /* 知识点-- 1 */
   transition: transform 0.5s;
-  transform: translateX(-300px);
+  transform: translateX(-920px);
 }
-.images img{
+.window .images img{
   /* border: 1px solid black; */
 }
 
@@ -23,5 +30,29 @@
 }
 
 #buttonWrapper{
-	text-align: center;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  background-image: url(./slideImage/panel.jpg);
+  list-style: none;
+}
+#buttonWrapper li.button.active{
+  background-image: url(./slideImage/active_bg.png);
+}
+#buttonWrapper li.button{
+  padding-top: 10px;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-bottom: 1px;
+  line-height: 19px;
+  background: url(./slideImage/divider.png) no-repeat right;
+}
+#buttonWrapper li.button:nth-child(2){
+  padding-top: 10px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+#buttonWrapper li:first-child{
+  background-image: url(./slideImage/divider.png);
+  width: 2px;
 }

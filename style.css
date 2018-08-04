@@ -5,6 +5,7 @@
   }
   .popover{
     border: 1px solid black;
+    display: none;
     position: absolute;
     left: 100%;
     white-space: nowrap;

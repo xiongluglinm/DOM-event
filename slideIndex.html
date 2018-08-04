@@ -9,24 +9,27 @@
 
 </head>
 <body>
-  <div class="window">
-    <div class="images" id="slides">
-      <img src="./slideImage/000.jpg" alt="" width=300>
-      <img src="./slideImage/001.jpg" alt="" width=300>
-      <img src="./slideImage/002.jpg" width=300 alt="">
-      <img src="./slideImage/003.jpg" alt="" width=300>
+  <div class="container"> 
+    <div class="window">
+      <div class="images" id="slides">
+        <img src="./slideImage/apple01.jpg" alt="" width=920>
+        <img src="./slideImage/apple02.jpg" alt="" width=920>
+        <img src="./slideImage/apple03.jpg" width=920 alt="">
+        <img src="./slideImage/apple04.jpg" alt="" width=920>
+      </div>
     </div>
-  </div>
-  <div id="buttonWrapper">
-    <button>第1张</button>
-    <button>第2张</button>
-    <button>第3张</button>
-    <button>第4张</button>
-  </div>
-  <div style="text-align: center;">
-    <button class="previous">上一张</button>
-    <button class="next">下一张</button>
-  </div>
+    <ul id="buttonWrapper">
+      <li></li>
+      <li class="button"><img src="./slideImage/icon01.png" alt=""></li>
+      <li class="button"><img src="./slideImage/icon02.png" alt=""></li>
+      <li class="button"><img src="./slideImage/icon03.png" alt=""></li>
+      <li class="button"><img src="./slideImage/icon04.png" alt=""></li>
+    </ul>
+    <!-- <div style="text-align: center;">
+      <button class="previous">上一张</button>
+      <button class="next">下一张</button>
+    </div> -->
+  </div> 
 </body>
   <script type="text/javascript" src="./jQuery-v3.3.1.js"></script>
   <script type="text/javascript" src="./slideMain.js"></script>
